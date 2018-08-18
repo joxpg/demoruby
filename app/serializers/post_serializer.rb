@@ -3,6 +3,6 @@ class PostSerializer < ActiveModel::Serializer
     belongs_to :user
 
     class UserSerializer < ActiveModel::Serializer
-        attributes :name
+        attributes :id, :token, :name
     end 
 end 

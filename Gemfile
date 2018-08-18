@@ -15,7 +15,8 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'jbuilder', '~> 2.7'
 gem 'active_model_serializers', '~> 0.10.7'
-gem 'hola', '~> 0.1.3'
+gem 'faraday', '~> 0.15.2'
+gem 'oj', '~> 3.6', '>= 3.6.6'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
