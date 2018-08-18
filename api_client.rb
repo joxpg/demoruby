@@ -1,3 +1,7 @@
+
+puts "ingrese su nombre"
+name = gets.chomp
+
 require 'faraday'
 
 client = Faraday.new(url:'http://localhost:3000') do |config|
@@ -7,7 +11,7 @@ response =client.post do |req|
 
     req.url '/api/v1/users'
     req.headers['Content-Type']='application/json'
-    req.body ='{"user":{"name": "testuser"}}'
+    req.body ='{"user":{"name": "'+name+'"}}'
 
 end
 require 'oj'
