@@ -7,12 +7,10 @@ response =client.post do |req|
 
     req.url '/api/v1/users'
     req.headers['Content-Type']='application/json'
-    req.body ='{"user":{"name": "testuser"]}}'
+    req.body ='{"user":{"name": "testuser"}}'
 
 end
 require 'oj'
 puts Oj.load(response.body)
 puts response.status
 
-
-end
